@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Painel administrativo do Meu Portfólio Digital.">
+
+    <title>Painel Administrativo | Meu Portfólio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <div class="logo">
+            ✦ Meu Portfólio
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="portfolio.html">
+                Portfólio
+            </a>
+
+            <a href="contato.html">
+                Contato
+            </a>
+
+            <a href="#" id="botaoSair">
+                Sair
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+
+    <main>
+
+        <section class="hero">
+
+            <p>ÁREA ADMINISTRATIVA</p>
+
+            <h1>
+                Painel Administrativo
+            </h1>
+
+            <p>
+                Gerencie os contatos recebidos e os
+                projetos do seu portfólio.
+            </p>
+
+        </section>
+
+
+        <!-- ÁREA DE LEADS -->
+
+        <section class="apresentacao">
+
+            <h2>
+                📩 Leads recebidos
+            </h2>
+
+            <p>
+                Aqui aparecerão as mensagens enviadas
+                pelo formulário de contato.
+            </p>
+
+
+            <div id="listaLeads">
+
+                <p>
+                    Carregando contatos...
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ÁREA DE PROJETOS -->
+
+        <section class="apresentacao">
+
+            <h2>
+                💻 Projetos
+            </h2>
+
+            <p>
+                Aqui você poderá administrar os projetos
+                apresentados no seu portfólio.
+            </p>
+
+
+            <!-- FORMULÁRIO PARA NOVO PROJETO -->
+
+            <div class="card">
+
+                <h3>
+                    Adicionar projeto
+                </h3>
+
+
+                <form id="formProjeto">
+
+                    <label for="tituloProjeto">
+                        Título
+                    </label>
+
+                    <input
+                        type="text"
+                        id="tituloProjeto"
+                        placeholder="Nome do projeto"
+                        required
+                    >
+
+
+                    <label for="descricaoProjeto">
+                        Descrição
+                    </label>
+
+                    <textarea
+                        id="descricaoProjeto"
+                        placeholder="Descrição do projeto"
+                        rows="5"
+                        required
+                    ></textarea>
+
+
+                    <label for="categoriaProjeto">
+                        Categoria
+                    </label>
+
+                    <input
+                        type="text"
+                        id="categoriaProjeto"
+                        placeholder="Ex.: Desenvolvimento Web"
+                    >
+
+
+                    <label for="imagemProjeto">
+                        URL da imagem
+                    </label>
+
+                    <input
+                        type="url"
+                        id="imagemProjeto"
+                        placeholder="https://..."
+                    >
+
+
+                    <label for="linkProjeto">
+                        Link do projeto
+                    </label>
+
+                    <input
+                        type="url"
+                        id="linkProjeto"
+                        placeholder="https://..."
+                    >
+
+
+                    <button
+                        type="submit"
+                        class="botao"
+                    >
+                        Adicionar projeto
+                    </button>
+
+                </form>
+
+
+                <p id="mensagemProjeto"></p>
+
+            </div>
+
+
+            <!-- LISTA DE PROJETOS -->
+
+            <div id="listaProjetos">
+
+                <p>
+                    Carregando projetos...
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFORMAÇÃO -->
+
+        <section class="mensagem">
+
+            <h2>
+                🔒 Área protegida
+            </h2>
+
+            <p>
+                Este painel é destinado somente ao
+                administrador do portfólio.
+            </p>
+
+            <button
+                id="botaoSair2"
+                class="botao"
+            >
+                Sair da conta
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            © 2026 · Meu Portfólio Digital
+        </p>
+
+        <p>
+            Desenvolvido como projeto do 2º ano EMTI.
+        </p>
+
+    </footer>
+
+
+    <!-- SUPABASE -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- JAVASCRIPT DO PROJETO -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

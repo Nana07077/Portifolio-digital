@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fbff;
+    color: #263442;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dce8f3;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: #3478c5;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #263442;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #3478c5;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #eaf4ff,
+        #dce8f3
+    );
+
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.hero > p:first-child {
+    color: #246b7a;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    max-width: 800px;
+    margin: 20px auto;
+    color: #3478c5;
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+.botoes {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.botoes a {
+    background-color: #3478c5;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.botoes a:hover {
+    background-color: #246b7a;
+}
+
+
+/* =========================
+   APRESENTAÇÃO
+========================= */
+
+.apresentacao {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.apresentacao h2 {
+    color: #3478c5;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.apresentacao > p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #dce8f3;
+    border-radius: 12px;
+    padding: 28px;
+    text-align: left;
+    box-shadow: 0 5px 18px rgba(52, 120, 197, 0.08);
+}
+
+.card h3 {
+    color: #3478c5;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 18px;
+}
+
+.card a {
+    color: #246b7a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   MENSAGEM FINAL
+========================= */
+
+.mensagem {
+    background-color: #3478c5;
+    color: white;
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.mensagem h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.mensagem p {
+    max-width: 650px;
+    margin: auto;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background-color: #263442;
+    color: white;
+    text-align: center;
+    padding: 25px 8%;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

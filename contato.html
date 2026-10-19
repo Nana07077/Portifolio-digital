@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Entre em contato através do formulário do meu portfólio.">
+
+    <title>Contato | Meu Portfólio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+
+        <div class="logo">
+            ✦ Meu Portfólio
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="minha-escola.html">
+                Minha Escola
+            </a>
+
+            <a href="estudos.html">
+                Estudos
+            </a>
+
+            <a href="portfolio.html">
+                Portfólio
+            </a>
+
+            <a href="quem-sou.html">
+                Quem Sou
+            </a>
+
+            <a href="contato.html">
+                Contato
+            </a>
+
+            <a href="login.html" title="Área administrativa">
+                🔒
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+    <main>
+
+        <section class="hero">
+
+            <p>
+                ENTRE EM CONTATO
+            </p>
+
+            <h1>
+                Fale comigo
+            </h1>
+
+            <p>
+                Envie uma mensagem através do formulário.
+            </p>
+
+        </section>
+
+
+        <section class="apresentacao">
+
+            <div class="card">
+
+                <h2>
+                    Formulário de contato
+                </h2>
+
+                <p>
+                    Preencha os campos abaixo para enviar
+                    uma mensagem.
+                </p>
+
+
+                <form id="formContato">
+
+                    <label for="nome">
+                        Nome
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Seu nome"
+                        required
+                    >
+
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Seu e-mail"
+                        required
+                    >
+
+
+                    <label for="whatsapp">
+                        WhatsApp
+                    </label>
+
+                    <input
+                        type="text"
+                        id="whatsapp"
+                        placeholder="Seu WhatsApp"
+                    >
+
+
+                    <label for="assunto">
+                        Assunto
+                    </label>
+
+                    <input
+                        type="text"
+                        id="assunto"
+                        placeholder="Assunto da mensagem"
+                    >
+
+
+                    <label for="mensagem">
+                        Mensagem
+                    </label>
+
+                    <textarea
+                        id="mensagem"
+                        placeholder="Digite sua mensagem"
+                        rows="6"
+                        required
+                    ></textarea>
+
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            id="consentimento"
+                            required
+                        >
+
+                        Concordo com o envio dos meus dados
+                        através deste formulário.
+
+                    </label>
+
+
+                    <button
+                        type="submit"
+                        class="botao"
+                    >
+                        Enviar mensagem
+                    </button>
+
+
+                    <p id="mensagemContato"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <p>
+            © 2026 · Meu Portfólio Digital
+        </p>
+
+        <p>
+            Desenvolvido como projeto do 2º ano EMTI.
+        </p>
+
+    </footer>
+
+
+    <!-- SUPABASE -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

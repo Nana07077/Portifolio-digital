@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Área administrativa do Meu Portfólio Digital.">
+
+    <title>Administração | Meu Portfólio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            ✦ Meu Portfólio
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="minha-escola.html">Minha Escola</a>
+            <a href="estudos.html">Estudos</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="quem-sou.html">Quem Sou</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <p>ÁREA ADMINISTRATIVA</p>
+
+            <h1>🔒 Acesso restrito</h1>
+
+            <p>
+                Entre com sua conta de administrador
+                para acessar o painel do portfólio.
+            </p>
+
+        </section>
+
+
+        <section class="apresentacao">
+
+            <div class="card">
+
+                <h2>Entrar</h2>
+
+                <p>
+                    Utilize seu e-mail e senha cadastrados
+                    no sistema.
+                </p>
+
+
+                <form id="formLogin">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Seu e-mail"
+                        required
+                    >
+
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="senha"
+                        placeholder="Sua senha"
+                        required
+                    >
+
+
+                    <button
+                        type="submit"
+                        class="botao"
+                    >
+                        Entrar
+                    </button>
+
+                </form>
+
+
+                <p
+                    id="mensagemLogin"
+                    style="margin-top: 15px;"
+                ></p>
+
+            </div>
+
+        </section>
+
+
+        <section class="mensagem">
+
+            <h2>Área protegida</h2>
+
+            <p>
+                Somente usuários autorizados poderão
+                acessar os dados de contatos e administrar
+                os projetos do portfólio.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 · Meu Portfólio Digital
+        </p>
+
+        <p>
+            Desenvolvido como projeto do 2º ano EMTI.
+        </p>
+
+    </footer>
+
+
+    <!-- Biblioteca do Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- JavaScript do projeto -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
