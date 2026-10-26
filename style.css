@@ -558,15 +558,15 @@ footer p {
 }
 
 .home-page .mascote-home {
-    flex: 0 0 190px;
-    width: 190px;
+    flex: 0 0 230px;
+    width: 230px;
     position: relative;
     z-index: 2;
 }
 
 .home-page .mascote-home img {
     display: block;
-    width: 190px;
+    width: 230px;
     max-width: 100%;
     height: auto;
     object-fit: contain;
